@@ -7,6 +7,7 @@ $this->xpdo->lexicon->load('tv_widget');
 
 $modx->getService('fileHandler','modFileHandler', '', array('context' => $this->xpdo->context->get('key')));
 
+<<<<<<< HEAD
 /* get working context */
 $wctx = isset($_GET['wctx']) && !empty($_GET['wctx']) ? $modx->sanitizeString($_GET['wctx']) : '';
 if (!empty($wctx)) {
@@ -17,7 +18,21 @@ if (!empty($wctx)) {
     $params['wctx'] = $workingContext->get('key');
 } else {
     $params['wctx'] = $modx->context->get('key');
+=======
+$isRelativeBaseUrl = $this->xpdo->getOption('filemanager_path_relative',null,true);
+
+/* strip out filemanager_url from value to get relativeValue */
+$basePath = $this->xpdo->fileHandler->getBasePath(false);
+$baseUrl = $this->xpdo->fileHandler->getBaseUrl(true);
+$value = $this->get('value');
+if ($baseUrl != '/') {
+    $value = str_replace($baseUrl,'',$value);
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
 }
+$value = ltrim($value,'/');    
+
+$this->set('relativeValue',$value);
+$this->xpdo->smarty->assign('tv',$this);
 
 $value = $this->get('value');
 

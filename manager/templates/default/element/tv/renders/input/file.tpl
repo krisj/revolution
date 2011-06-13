@@ -10,7 +10,11 @@ var fld{/literal}{$tv->id}{literal} = MODx.load({
     ,renderTo: 'tvpanel{$tv->id}'
     ,tv: '{$tv->id}'
     ,value: '{$tv->value|escape}'
+<<<<<<< HEAD
     ,relativeValue: '{$tv->value|escape}'
+=======
+    ,relativeValue: '{$tv->relativeValue|escape}'
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
     ,width: '97%'
     ,msgTarget: 'under'
     ,allowBlank: {if $params.allowBlank == 1 || $params.allowBlank == 'true'}true{else}false{/if}

@@ -2,6 +2,7 @@
 This file shows the changes in recent releases of MODx. The most current release is usually the
 development release, and is only shown to give an idea of what's currently in the pipeline.
 
+<<<<<<< HEAD
 - [#3740] Add proxy support to modTransportPackage.class.php
 - [#3693] Fix reversed content-disposition logic on static resources
 - [#3427] Fix issue where User Settings were not respected with filemanager_path/url
@@ -16,12 +17,18 @@ development release, and is only shown to give an idea of what's currently in th
 
 MODx Revolution 2.0.7-pl (January 14, 2011)
 ====================================
+=======
+MODx Revolution 2.0.7-pl (January 14, 2011)
+====================================
+- [#3376] Fix table creation when default storage engine is not MyISAM
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
 - [#3472] Fix issue due to tree impr that prevented element saving success response
 - Improve loading of mgr pages by preventing trees from rendering until activated
 - [#3205] FC fixes: Ensure Resource Content field can have values set/renamed, that rules on create respect template, and that default values on create are set
 - [#3165] Fix issue where resource/updatefromgrid processor was missing published value if user does not have publish permission
 - [#2] Fix issue in user extended fields where subkeys in 2 separate containers DOM IDs conflict and prevent editing
 - [#3422], [#3374], [#3197] Fix issue with filemanager_url and Image/File TVs and their relative end result URLs
+<<<<<<< HEAD
 - [#3201], [#177] Add modResource.leaveGroup, modTemplate.hasTemplateVar, modTemplateVar.hasTemplate
 - [#3350] Fix for PHP bug: http://www.exploringbinary.com/php-hangs-on-numeric-value-2-2250738585072011e-308/
 - [#3326] Fix issue where TV radio/cb options with value of 0 couldnt be selected
@@ -32,6 +39,8 @@ MODx Revolution 2.0.7-pl (January 14, 2011)
 - Introduce pdo_sqlsrv support
 - Add database_dsn to config
 - Update xPDO to release 2.1.0-pl
+=======
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
 
 MODx Revolution 2.0.6-pl2 (January 6, 2011)
 ====================================

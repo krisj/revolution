@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Welcome Latvian lexicon topic
  *
@@ -6,12 +6,12 @@
  * @package modx
  * @subpackage lexicon
  */
-$_lang['modx_news'] = 'MODx News';
-$_lang['security_notices'] = 'Security Notices';
-$_lang['welcome_messages'] = 'Your Inbox contains <strong>%d</strong> message(s), of which <strong>%s</strong> are unread.';
-$_lang['welcome_title'] = 'Welcome to your MODx Content Manager';
-$_lang['yourinfo_message'] = 'This section shows some information about you:';
-$_lang['yourinfo_previous_login'] = 'Your last login:';
-$_lang['yourinfo_title'] = 'Your info';
-$_lang['yourinfo_total_logins'] = 'Total number of logins:';
-$_lang['yourinfo_username'] = 'You are logged in as:';
+$_lang['modx_news'] = 'MODx Jaunumi';
+$_lang['security_notices'] = 'Drošības Jaunumi';
+$_lang['welcome_messages'] = 'Pastkastē <strong>%d</strong> jaunas ziņas, no kurām <strong>%s</strong> neizlasītas.';
+$_lang['welcome_title'] = 'Sveicināti MODx Satura Vadībā';
+$_lang['yourinfo_message'] = 'Šī sadaļa satur nedaudz informāciju par jums:';
+$_lang['yourinfo_previous_login'] = 'Pēdējā reģistrēšanās:';
+$_lang['yourinfo_title'] = 'Par tevi';
+$_lang['yourinfo_total_logins'] = 'Kopā reģistrēšanās:';
+$_lang['yourinfo_username'] = 'Reģistrējies kā:';

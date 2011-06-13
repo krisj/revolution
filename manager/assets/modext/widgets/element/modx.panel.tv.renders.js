@@ -39,6 +39,7 @@ MODx.panel.ImageTV = function(config) {
             ,listeners: {
                 'select': {fn:function(data) {
                     Ext.getCmp('tv'+this.config.tv).setValue(data.relativeUrl);
+<<<<<<< HEAD
                     Ext.getCmp('tvbrowser'+this.config.tv).setValue(data.relativeUrl);
                     this.fireEvent('select',data);
                 },scope:this}
@@ -46,6 +47,15 @@ MODx.panel.ImageTV = function(config) {
                     Ext.getCmp('tv'+this.config.tv).setValue(nv);
                     this.fireEvent('select',{
                         relativeUrl: nv
+=======
+                    Ext.getCmp('tvbrowser'+this.config.tv).setValue(data.url);
+                    this.fireEvent('select',data);
+                },scope:this}
+                ,'change': {fn:function(cb,nv) {
+                    Ext.getCmp('tv'+this.config.tv).setValue(this.config.filemanager_url+nv);
+                    this.fireEvent('select',{
+                        relativeUrl: this.config.filemanager_url+nv
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
                         ,url: nv
                     });
                 },scope:this}
@@ -92,7 +102,11 @@ MODx.panel.FileTV = function(config) {
             ,listeners: {
                 'select': {fn:function(data) {
                     Ext.getCmp('tv'+this.config.tv).setValue(data.relativeUrl);
+<<<<<<< HEAD
                     Ext.getCmp('tvbrowser'+this.config.tv).setValue(data.relativeUrl);
+=======
+                    Ext.getCmp('tvbrowser'+this.config.tv).setValue(data.url);
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
                     this.fireEvent('select',data);                    
                 },scope:this}
                 ,'change': {fn:function(cb,nv) {

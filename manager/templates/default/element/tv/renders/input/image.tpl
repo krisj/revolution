@@ -1,7 +1,11 @@
 <div id="tvbrowser{$tv->id}"></div>
 <div id="tv-image-{$tv->id}" style="width: 97%"></div>
 <div id="tv-image-preview-{$tv->id}">
+<<<<<<< HEAD
     {if $tv->value}<img src="{$_config.connectors_url}system/phpthumb.php?h=150&w=150&src={$tv->value}&basePath={$params.basePath}&basePathRelative={$params.basePathRelative}&baseUrl={$params.baseUrl}&baseUrlRelative={$params.baseUrlRelative}" alt="" />{/if}
+=======
+    {if $tv->value}<img src="{$_config.connectors_url}system/phpthumb.php?h=150&w=150&src={$tv->relativeValue}" alt="" />{/if}
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
 </div>
 
 <script type="text/javascript">
@@ -13,7 +17,11 @@ var fld{/literal}{$tv->id}{literal} = MODx.load({
     ,renderTo: 'tv-image-{$tv->id}'
     ,tv: '{$tv->id}'
     ,value: '{$tv->value|escape}'
+<<<<<<< HEAD
     ,relativeValue: '{$tv->value|escape}'
+=======
+    ,relativeValue: '{$tv->relativeValue|escape}'
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
     ,width: '97%'
     ,allowBlank: {if $params.allowBlank == 1 || $params.allowBlank == 'true'}true{else}false{/if}
     {if $params.basePath},basePath: "{$params.basePath}"{/if}

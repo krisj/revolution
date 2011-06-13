@@ -52,6 +52,7 @@ class xPDOQuery_mysql extends xPDOQuery {
             if (empty ($this->query['columns'])) {
                 $this->select('*');
             }
+<<<<<<< HEAD
             foreach ($this->query['columns'] as $alias => $column) {
                 $ignorealias = is_int($alias);
                 $escape = !preg_match('/\bAS\b/i', $column) && !preg_match('/\./', $column) && !preg_match('/\(/', $column);
@@ -63,6 +64,13 @@ class xPDOQuery_mysql extends xPDOQuery {
                 if (!$ignorealias) {
                     $alias = $escape ? $this->xpdo->escape($alias) : $alias;
                     $columns[]= "{$column} AS {$alias}";
+=======
+            $ignorealias= isset ($this->query['columns'][0]);
+            foreach ($this->query['columns'] as $alias => $column) {
+                $column= trim($column);
+                if (!$ignorealias && $alias !== $column) {
+                    $columns[]= "{$column} AS " . $this->xpdo->escape($alias);
+>>>>>>> 8ce2e449ca00fcde28d1968498f584f46a5b2bbc
                 } else {
                     $columns[]= "{$column}";
                 }

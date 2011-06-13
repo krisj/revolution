@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Workspace Latvian lexicon topic
  *
@@ -6,14 +6,14 @@
  * @package modx
  * @subpackage lexicon
  */
-$_lang['alphabetically'] = 'Alphabetically';
-$_lang['already_downloaded'] = 'You have already downloaded this package.';
-$_lang['api_key'] = 'API Key';
-$_lang['author'] = 'Author';
-$_lang['autoincludes_packaging'] = 'Packaging in autoincludes: [[+autoincludes]]';
-$_lang['back_txt'] = 'Back';
-$_lang['by'] = 'by';
-$_lang['changelog'] = 'Changelog';
+$_lang['alphabetically'] = 'Alfabētiski';
+$_lang['already_downloaded'] = 'Šī pakete jau lejuplādēta.';
+$_lang['api_key'] = 'API Atslēga';
+$_lang['author'] = 'Autors';
+$_lang['autoincludes_packaging'] = 'Pakojas auto inklūdēs: [[+autoincludes]]';
+$_lang['back_txt'] = 'Atpakaļ';
+$_lang['by'] = '';
+$_lang['changelog'] = 'Izmaiņas';
 $_lang['changelog_desc'] = 'Please review the changelog for this version.';
 $_lang['core_err_invalid'] = 'You must have a valid core installation with an active workspace to run the build.';
 $_lang['description'] = 'Description';
